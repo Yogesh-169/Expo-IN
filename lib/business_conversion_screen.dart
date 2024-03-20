@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'home1.dart'; // Import the Home1 screen
+import 'CustomeNavigation.dart';
 
 class BusinessConversionScreen extends StatelessWidget {
   @override
@@ -12,7 +12,7 @@ class BusinessConversionScreen extends StatelessWidget {
           TextButton(
             onPressed: () {
               // Navigate to Home1 when Skip is pressed
-              Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage()));
+              Navigator.push(context, MaterialPageRoute(builder: (context) => CustomNavigationPanel()));
             },
             child: Text(
               'Skip',
